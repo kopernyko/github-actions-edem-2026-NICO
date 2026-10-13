@@ -10,5 +10,5 @@ jobs:
         name: Grab the curremt time
         run: |
           curTime=$(date)
-          echo "currenttime=${curTime}" >> $GITUHB_OUTPUT
+          echo "currenttime="${curTime} >> $GITUHB_OUTPUT
       - run: echo "The time from the previous step is ${{ steps.get-time.outputs.currenttime }}"
